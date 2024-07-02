@@ -23,20 +23,3 @@ const TaskList = styled.ul`
   gap: 16px;
 `;
 
-const CompletedTasks = () => {
-  const { taskList } = useContext(AppContext);
-
-  return (
-    <Container>
-      <Title iconName="completed" text={Text.complete} />
-
-      <TaskList>
-        {taskList.map(
-          (task) => task.done && <TaskItem key={task.id} task={task} />
-        )}
-      </TaskList>
-    </Container>
-  );
-};
-
-export default CompletedTasks;

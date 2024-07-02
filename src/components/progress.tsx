@@ -103,7 +103,6 @@ const Progress = () => {
 
   return (
     <Container>
-      <Title iconName="chart" text={Text.progress} />
 
       <ProgressBar>
         <ProgressBarFill progressBarValue={progressBarValue} />
